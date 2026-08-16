@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# fotos subidas por invitados (adapter local)
+/public/uploads/*
+!/public/uploads/.gitkeep
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

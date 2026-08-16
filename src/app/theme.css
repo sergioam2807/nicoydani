@@ -1,0 +1,64 @@
+/**
+ * TEMA VISUAL CENTRALIZADO
+ * -------------------------------------------------------------
+ * Este es el ÚNICO archivo que deberías tocar para cambiar la
+ * paleta de colores, tipografías o radios de la web completa.
+ * Tailwind v4 lee estas variables mediante el bloque @theme y
+ * genera automáticamente clases utilitarias: bg-brand-500,
+ * text-accent, font-display, rounded-card, etc.
+ */
+
+:root {
+  /* Paleta principal (verde salvia / boda elegante) */
+  --color-brand-50: #f6f7f2;
+  --color-brand-100: #e9ebe0;
+  --color-brand-200: #d3d7c1;
+  --color-brand-300: #b3bb98;
+  --color-brand-400: #939f72;
+  --color-brand-500: #778457;
+  --color-brand-600: #5e6944;
+  --color-brand-700: #4a5237;
+  --color-brand-800: #3b4130;
+  --color-brand-900: #31362a;
+
+  /* Color de acento (detalles, botones destacados) */
+  --color-accent-400: #d4af7a;
+  --color-accent-500: #c19a5b;
+  --color-accent-600: #a67f43;
+
+  /* Neutros / fondo */
+  --color-paper: #fdfbf6;
+  --color-ink: #2b2a26;
+
+  /* Tipografías (cargadas vía next/font en layout.tsx, con fallback) */
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-body: var(--font-poppins), "Helvetica Neue", Arial, sans-serif;
+
+  /* Bordes */
+  --radius-card: 1.25rem;
+}
+
+@theme inline {
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+
+  --color-paper: var(--color-paper);
+  --color-ink: var(--color-ink);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+
+  --radius-card: var(--radius-card);
+}
