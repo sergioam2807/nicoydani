@@ -12,7 +12,7 @@ export function AccessGate({ children }: { children: ReactNode }) {
   const [unlocked, setUnlocked] = useState(false);
   const [code, setCode] = useState("");
   const [error, setError] = useState(false);
-  const { togglePlaying, playing } = useMusic();
+  const { playFromGesture } = useMusic();
 
   useEffect(() => {
     const stored = window.localStorage.getItem(siteConfig.access.storageKey);
@@ -26,7 +26,7 @@ export function AccessGate({ children }: { children: ReactNode }) {
       window.localStorage.setItem(siteConfig.access.storageKey, "true");
       setUnlocked(true);
       setError(false);
-      if (!playing) togglePlaying();
+      playFromGesture();
     } else {
       setError(true);
     }

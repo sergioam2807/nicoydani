@@ -15,6 +15,7 @@ type MusicContextValue = {
   muted: boolean;
   toggleMuted: () => void;
   togglePlaying: () => void;
+  playFromGesture: () => void;
 };
 
 const MusicContext = createContext<MusicContextValue | null>(null);
@@ -42,6 +43,18 @@ export function MusicProvider({ children }: { children: ReactNode }) {
     if (audioRef.current) audioRef.current.muted = muted;
   }, [muted]);
 
+  // Llamar audio.play() directamente dentro del handler de un clic (no en un
+  // useEffect posterior) para que navegadores estrictos (ej. WebView de
+  // WhatsApp/Instagram) lo reconozcan como iniciado por un gesto del usuario.
+  function playFromGesture() {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio
+      .play()
+      .then(() => setPlaying(true))
+      .catch(() => setPlaying(false));
+  }
+
   return (
     <MusicContext.Provider
       value={{
@@ -49,6 +62,7 @@ export function MusicProvider({ children }: { children: ReactNode }) {
         muted,
         toggleMuted: () => setMuted((m) => !m),
         togglePlaying: () => setPlaying((p) => !p),
+        playFromGesture,
       }}
     >
       <audio ref={audioRef} src={siteConfig.music.src} loop preload="auto" />
