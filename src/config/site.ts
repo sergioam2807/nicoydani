@@ -11,6 +11,10 @@ export const siteConfig = {
     hashtag: "#DanielYNicolSeCasan",
   },
 
+  hero: {
+    backgroundImage: "/hero/portada.jpg",
+  },
+
   // Fecha y hora del matrimonio (usada por countdown y "agregar al calendario")
   event: {
     date: new Date("2026-11-21T15:00:00-04:00"), // 21 de noviembre, 15:00 hrs
@@ -48,13 +52,7 @@ export const siteConfig = {
 
   gallery: {
     credit: "Fotografía por Karla",
-    // Reemplaza estos placeholders por las fotos reales (cualquier formato: jpg, png, webp).
-    images: [
-      { src: "/gallery/foto-1.svg", alt: "Foto 1" },
-      { src: "/gallery/foto-2.svg", alt: "Foto 2" },
-      { src: "/gallery/foto-3.svg", alt: "Foto 3" },
-      { src: "/gallery/foto-4.svg", alt: "Foto 4" },
-    ],
+    // Las fotos del deck se leen automáticamente desde /public/polaroid/.
   },
 } as const;
 

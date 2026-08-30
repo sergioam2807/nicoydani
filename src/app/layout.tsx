@@ -31,7 +31,7 @@ export default function RootLayout({
       lang="es"
       className={`${playfair.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <MusicProvider>
           <AccessGate>{children}</AccessGate>
         </MusicProvider>

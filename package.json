@@ -11,10 +11,10 @@
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1091.0",
     "@aws-sdk/s3-request-presigner": "^3.1091.0",
+    "@ikefakis/react-polaroid-photo-deck": "^3.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.4.0",
-    "embla-carousel-react": "^8.6.0",
     "lucide-react": "^1.25.0",
     "next": "16.2.11",
     "react": "19.2.4",
