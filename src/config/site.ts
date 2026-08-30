@@ -50,10 +50,7 @@ export const siteConfig = {
     title: "Nuestra canción",
   },
 
-  gallery: {
-    // credit: "Fotografía por Karla",
-    // Las fotos del deck se leen automáticamente desde /public/polaroid/.
-  },
+  // Las fotos del deck se leen automáticamente desde /public/polaroid/.
 } as const;
 
 export type SiteConfig = typeof siteConfig;
