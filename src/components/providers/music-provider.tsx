@@ -21,7 +21,7 @@ const MusicContext = createContext<MusicContextValue | null>(null);
 
 export function MusicProvider({ children }: { children: ReactNode }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
   const [muted, setMuted] = useState(false);
 
   useEffect(() => {
@@ -51,7 +51,7 @@ export function MusicProvider({ children }: { children: ReactNode }) {
         togglePlaying: () => setPlaying((p) => !p),
       }}
     >
-      <audio ref={audioRef} src={siteConfig.music.src} loop preload="none" />
+      <audio ref={audioRef} src={siteConfig.music.src} loop preload="auto" />
       {children}
     </MusicContext.Provider>
   );

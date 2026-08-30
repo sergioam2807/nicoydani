@@ -51,7 +51,7 @@ export const siteConfig = {
   },
 
   gallery: {
-    credit: "Fotografía por Karla",
+    // credit: "Fotografía por Karla",
     // Las fotos del deck se leen automáticamente desde /public/polaroid/.
   },
 } as const;
