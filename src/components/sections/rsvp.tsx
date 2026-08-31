@@ -69,23 +69,6 @@ export function Rsvp() {
             </div>
           </div>
 
-          {/* {attending === "si" && (
-            <div>
-              <label htmlFor="rsvp-guests" className="text-sm text-brand-200">
-                Número de personas (incluyéndote)
-              </label>
-              <input
-                id="rsvp-guests"
-                type="number"
-                min={1}
-                max={10}
-                value={guests}
-                onChange={(e) => setGuests(Number(e.target.value) || 1)}
-                className="mt-1 w-full rounded-full border border-brand-300/40 bg-paper/10 px-5 py-3 text-paper focus:border-accent-400 focus:outline-none"
-              />
-            </div>
-          )} */}
-
           <div>
             <label htmlFor="rsvp-message" className="text-sm text-brand-200">
               Mensaje (opcional)

@@ -17,7 +17,7 @@ export const siteConfig = {
 
   // Fecha y hora del matrimonio (usada por countdown y "agregar al calendario")
   event: {
-    date: new Date("2026-11-21T15:00:00-04:00"), // 21 de noviembre, 15:00 hrs
+    date: new Date("2026-11-21T15:00:00-02:00"), // 21 de noviembre, 15:00 hrs
     title: "Matrimonio de Daniel & Nicol",
     description: "¡Acompáñanos a celebrar nuestro matrimonio!",
     durationHours: 6,
@@ -31,8 +31,8 @@ export const siteConfig = {
 
   // Ubicación del lugar
   venue: {
-    name: "Nombre del Lugar / Salón",
-    address: "Dirección completa del lugar, Comuna, Ciudad",
+    name: "Los Laureles",
+    address: "Los Laureles Poste 148 el Maqui camino Tabolango",
     // Si tienes coordenadas exactas, complétalas para links más precisos
     lat: null as number | null,
     lng: null as number | null,
@@ -41,13 +41,33 @@ export const siteConfig = {
   // Confirmación de asistencia vía WhatsApp
   rsvp: {
     // Número en formato internacional sin '+' ni espacios, ej: 56912345678
-    whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "56900000000",
+    whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "56974280077",
   },
 
   // Música de fondo
   music: {
     src: "/audio/background-music.mp3",
     title: "Nuestra canción",
+  },
+
+  // Datos de cuenta para regalo de novios (se muestran dentro del sobre)
+  gift: {
+    message:
+      "Tu presencia es el mejor regalo, pero si quieres tener un detalle con nosotros, aquí tienes nuestros datos.",
+    holderName: "Daniel Alvarez Medina",
+    rut: "15.764.000-3",
+    bank: "Banco de Chile",
+    accountType: "Cuenta Corriente",
+    accountNumber: "001471703003",
+    email: "daniel.alvarez.medina@gmail.com",
+  },
+
+  // Código de vestimenta
+  dressCode: {
+    title: "Formal",
+    description:
+      "Nos encantaría que nos acompañaras con un look formal para esta noche tan especial.",
+    note: "Por favor evita el blanco y tonos muy similares; están reservados para la novia.",
   },
 
   // Las fotos del deck se leen automáticamente desde /public/polaroid/.

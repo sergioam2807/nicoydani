@@ -31,9 +31,6 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
 
       <div className="relative z-10 flex flex-col items-center">
-        <p className="font-display text-sm uppercase tracking-[0.35em] text-white/90 [text-shadow:0_1px_8px_rgb(0_0_0_/_0.5)]">
-          {siteConfig.couple.hashtag}
-        </p>
         <h1 className="font-display mt-6 text-5xl text-white sm:text-7xl [text-shadow:0_2px_16px_rgb(0_0_0_/_0.55)]">
           {siteConfig.couple.groom}
           <span className="mx-4 text-accent-400">&amp;</span>
@@ -43,6 +40,11 @@ export function Hero() {
           {formattedDate} · {formattedTime} hrs
         </p>
         <div className="mt-10 h-px w-24 bg-white/70" />
+        <div className="mt-10">
+        <p className="font-display text-sm uppercase tracking-[0.35em] text-white/90 [text-shadow:0_1px_8px_rgb(0_0_0_/_0.5)]">
+          {siteConfig.couple.hashtag}
+        </p>
+        </div>
       </div>
     </section>
   );
