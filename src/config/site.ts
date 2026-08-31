@@ -17,7 +17,7 @@ export const siteConfig = {
 
   // Fecha y hora del matrimonio (usada por countdown y "agregar al calendario")
   event: {
-    date: new Date("2026-11-21T15:00:00-02:00"), // 21 de noviembre, 15:00 hrs
+    date: new Date("2026-11-21T14:00:00-04:00"), // 21 de noviembre, 15:00 hrs
     title: "Matrimonio de Daniel & Nicol",
     description: "¡Acompáñanos a celebrar nuestro matrimonio!",
     durationHours: 6,
