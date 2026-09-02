@@ -77,13 +77,11 @@ export const siteConfig = {
     note: "Por favor evita el blanco y tonos muy similares; están reservados para la novia.",
   },
 
-  // Las fotos del deck se leen automáticamente desde /public/polaroid/.
-  gallery: {
-    // Nombres de archivo (tal cual están en /public/polaroid/) en el orden
-    // en que quieres que aparezcan primero. Las fotos no listadas se agregan
-    // después, en orden alfabético.
-    photoOrder: ["WhatsApp Image1.jpeg"] as string[],
-  },
+  // Las fotos del deck se leen automáticamente desde /public/polaroid/, en
+  // orden alfabético según el nombre de archivo. Para reordenarlas, renombra
+  // los archivos con prefijos numéricos (01.jpeg, 02.jpeg, ...): la que debe
+  // verse PRIMERA lleva el número MÁS ALTO, porque el deck apila mostrando
+  // primero la última carta del arreglo.
 } as const;
 
 export type SiteConfig = typeof siteConfig;
