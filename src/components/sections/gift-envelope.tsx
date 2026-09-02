@@ -89,7 +89,7 @@ export function GiftEnvelope() {
               type="button"
               onClick={() => setOpen(true)}
               aria-label="Abrir sobre"
-              className="absolute left-1/2 top-[38%] z-50 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-accent-500 text-paper shadow-lg transition-transform hover:scale-110"
+              className="seal-pulse absolute left-1/2 top-[38%] z-50 flex h-14 w-14 items-center justify-center rounded-full bg-accent-500 text-paper shadow-lg"
             >
               <Heart size={22} fill="currentColor" />
             </button>

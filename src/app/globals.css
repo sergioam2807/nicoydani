@@ -17,3 +17,22 @@ h3,
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes seal-pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+}
+
+.seal-pulse {
+  animation: seal-pulse 1.8s ease-in-out infinite;
+}
+
+.seal-pulse:hover {
+  animation-play-state: paused;
+  transform: translate(-50%, -50%) scale(1.15);
+}

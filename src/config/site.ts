@@ -78,6 +78,12 @@ export const siteConfig = {
   },
 
   // Las fotos del deck se leen automáticamente desde /public/polaroid/.
+  gallery: {
+    // Nombres de archivo (tal cual están en /public/polaroid/) en el orden
+    // en que quieres que aparezcan primero. Las fotos no listadas se agregan
+    // después, en orden alfabético.
+    photoOrder: ["WhatsApp Image1.jpeg"] as string[],
+  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;
