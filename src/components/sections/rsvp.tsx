@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { Check, MessageCircle, MessageSquare, User, Users, X } from "lucide-react";
+import { MessageCircle, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { buildRsvpWhatsappUrl, type RsvpAnswer } from "@/lib/whatsapp";
 
