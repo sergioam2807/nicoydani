@@ -7,6 +7,7 @@ import { GiftEnvelope } from "@/components/sections/gift-envelope";
 import { PhotoShare } from "@/components/sections/photo-share";
 import { Rsvp } from "@/components/sections/rsvp";
 import { MusicPlayer } from "@/components/music/music-player";
+import { SectionDivider } from "@/components/ui/section-divider";
 
 export default function Home() {
   return (
@@ -14,11 +15,14 @@ export default function Home() {
       <MusicPlayer />
       <Hero />
       <Countdown />
+      <SectionDivider />
       <Location />
+      <SectionDivider />
       <DressCode />
+      <SectionDivider />
       <Gallery />
+      <SectionDivider />
       <GiftEnvelope />
-      <PhotoShare />
       <Rsvp />
     </>
   );

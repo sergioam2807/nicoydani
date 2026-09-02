@@ -5,7 +5,7 @@ export function Gallery() {
   const cards = getPolaroidCards();
 
   return (
-    <section id="galeria" className="bg-brand-50 px-6 py-24 text-center">
+    <section id="galeria" className="bg-paper px-6 py-24 text-center">
       <h2 className="font-display text-3xl text-brand-900 sm:text-4xl">
         Nuestros momentos
       </h2>

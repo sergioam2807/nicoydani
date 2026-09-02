@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { MessageCircle } from "lucide-react";
+import { Check, MessageCircle, MessageSquare, User, Users, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { buildRsvpWhatsappUrl, type RsvpAnswer } from "@/lib/whatsapp";
 
@@ -36,7 +36,11 @@ export function Rsvp() {
 
         <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4 text-left">
           <div>
-            <label htmlFor="rsvp-name" className="text-sm text-brand-200">
+            <label
+              htmlFor="rsvp-name"
+              className="flex items-center gap-2 text-sm text-brand-200"
+            >
+              <User size={16} />
               Nombre completo
             </label>
             <input

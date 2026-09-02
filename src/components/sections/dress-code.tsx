@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site";
 
 export function DressCode() {
   return (
-    <section id="vestimenta" className="bg-paper px-6 py-24 text-center">
+    <section id="vestimenta" className="bg-brand-50 px-6 py-24 text-center">
       <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-200 text-brand-700">
         <Shirt size={26} />
       </div>
