@@ -23,7 +23,7 @@ export const siteConfig = {
     timeZone: "America/Santiago",
     // La hora se muestra como texto fijo (no se calcula desde `date`) para
     // que no la corra un eventual cambio de horario: siempre dice "2:00 p. m.".
-    displayTime: "2:00 p. m.",
+    displayTime: "14:00",
     title: "Matrimonio de Daniel & Nicol",
     description: "¡Acompáñanos a celebrar nuestro matrimonio!",
     durationHours: 6,
@@ -39,9 +39,9 @@ export const siteConfig = {
   venue: {
     name: "Los Laureles",
     address: "Los Laureles Poste 148 el Maqui camino Tabolango",
-    // Si tienes coordenadas exactas, complétalas para links más precisos
-    lat: null as number | null,
-    lng: null as number | null,
+    // Coordenadas exactas (32°57'39.1"S 71°21'25.0"W) para links más precisos
+    lat: -32.960861 as number | null,
+    lng: -71.356944 as number | null,
   },
 
   // Confirmación de asistencia vía WhatsApp
