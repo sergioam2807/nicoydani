@@ -13,6 +13,7 @@ export const siteConfig = {
 
   hero: {
     backgroundImage: "/hero/portada.jpg",
+    invitationMessage: "Te invitamos a la celebración de nuestro matrimonio",
   },
 
   // Fecha y hora del matrimonio (usada por countdown y "agregar al calendario")

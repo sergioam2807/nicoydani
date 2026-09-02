@@ -33,7 +33,10 @@ export function Hero() {
           <span className="mx-4 text-accent-400">&amp;</span>
           {siteConfig.couple.bride}
         </h1>
-        <p className="mt-6 max-w-md text-lg text-white/90 capitalize [text-shadow:0_1px_8px_rgb(0_0_0_/_0.5)]">
+        <p className="mt-5 max-w-md text-lg text-white/90 [text-shadow:0_1px_8px_rgb(0_0_0_/_0.5)]">
+          {siteConfig.hero.invitationMessage}
+        </p>
+        <p className="mt-4 max-w-md text-lg text-white/90 capitalize [text-shadow:0_1px_8px_rgb(0_0_0_/_0.5)]">
           {formattedDate} · {siteConfig.event.displayTime} hrs
         </p>
         <div className="mt-10 h-px w-24 bg-white/70" />
