@@ -17,7 +17,13 @@ export const siteConfig = {
 
   // Fecha y hora del matrimonio (usada por countdown y "agregar al calendario")
   event: {
-    date: new Date("2026-11-21T14:00:00-04:00"), // 21 de noviembre, 15:00 hrs
+    date: new Date("2026-11-21T14:00:00-03:00"), // 21 de noviembre, 14:00 hrs (hora de Chile)
+    // Zona horaria usada para MOSTRAR la fecha (día de la semana, etc.), sin
+    // importar el huso horario del dispositivo de quien visita el sitio.
+    timeZone: "America/Santiago",
+    // La hora se muestra como texto fijo (no se calcula desde `date`) para
+    // que no la corra un eventual cambio de horario: siempre dice "2:00 p. m.".
+    displayTime: "2:00 p. m.",
     title: "Matrimonio de Daniel & Nicol",
     description: "¡Acompáñanos a celebrar nuestro matrimonio!",
     durationHours: 6,

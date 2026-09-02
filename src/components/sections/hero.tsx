@@ -7,10 +7,7 @@ export function Hero() {
     day: "numeric",
     month: "long",
     year: "numeric",
-  });
-  const formattedTime = siteConfig.event.date.toLocaleTimeString("es-CL", {
-    hour: "2-digit",
-    minute: "2-digit",
+    timeZone: siteConfig.event.timeZone,
   });
 
   return (
@@ -37,7 +34,7 @@ export function Hero() {
           {siteConfig.couple.bride}
         </h1>
         <p className="mt-6 max-w-md text-lg text-white/90 capitalize [text-shadow:0_1px_8px_rgb(0_0_0_/_0.5)]">
-          {formattedDate} · {formattedTime} hrs
+          {formattedDate} · {siteConfig.event.displayTime} hrs
         </p>
         <div className="mt-10 h-px w-24 bg-white/70" />
         <div className="mt-10">

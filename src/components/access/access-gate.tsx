@@ -47,6 +47,7 @@ export function AccessGate({ children }: { children: ReactNode }) {
           day: "numeric",
           month: "long",
           year: "numeric",
+          timeZone: siteConfig.event.timeZone,
         })}
       </p>
 
